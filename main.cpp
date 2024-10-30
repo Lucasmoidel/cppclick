@@ -72,9 +72,6 @@ void process_input() {
 
 void update() {
     last_frame_time = SDL_GetTicks();
-    if (clicks == 100){
-        game_running = false;
-    }
 
 }
 
