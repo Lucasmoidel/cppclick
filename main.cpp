@@ -31,6 +31,9 @@ void destroy_window();
 
 void setup() {
     font = TTF_OpenFont("comic.ttf", 40);
+    SDL_Surface* iconsurface = SDL_LoadBMP("icon.bmp");
+    SDL_SetWindowIcon(window, iconsurface);
+    
 }
 
 int main (int argc, char *argv[]) {
